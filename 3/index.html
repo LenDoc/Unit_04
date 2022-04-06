@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+<style>
+    form{
+       
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:20px;
+        margin:20px;
+    }
+    label{
+        display: flex;
+        float:left;
+        margin:10px;
+        font-weight: bold;
+    }
+    input{
+        margin:10px;
+        font-size: 18px;
+        font-family: Georgia, serif;
+    }
+    .inline{
+        display: inline-block;
+        margin:10px;
+    }
+    .for-form{
+        background-color: bisque;
+        border: 3px solid rebeccapurple; 
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+    .btn{ 
+        color: black;
+        font-size: 16px;
+        padding: 16px 30px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .btn:hover {
+        background-color: black;
+        color: white;
+}
+</style>
+
+</head>
+<body>
+   
+    <form method="get" action="" enctype="text/plain">
+        <div class="for-form" >
+
+       
+     <div class="inline">
+
+     
+        <label for="login" accesskey="l">Логин: </label>
+        <input type="text" name="login" placeholder="Введите логин" required />
+    </div>
+    <div class="inline">
+
+        <label for="login" accesskey="l">Пароль: </label>
+    
+        <input type="password" name="pass" placeholder="Введите пароль" required />
+        </div>
+        <div class="inline">
+
+        <input style=" background-color: rgb(255, 96, 96);" class="btn" type="reset" value="Сбросить" />
+        <input style=" background-color: rgb(144, 255, 96);" class="btn" type="submit"  value="Отправить" />
+        </div>
+     </div>
+     </form> 
+</body>
+</html>

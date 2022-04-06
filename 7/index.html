@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7</title>
+<style>
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+         align-items: center;
+        justify-content: center; 
+        padding:20px;
+        margin:20px;
+    }
+    label{
+        display: flex;
+        float:left;
+        margin:20px;
+    }
+    select, input{
+        width: 400px;
+        margin:20px;
+        height: 20px;
+    }
+    .personal{
+        color: rgb(0, 55, 255);
+        overflow: visible;
+        text-align: center;
+        height: 1px;
+        width: 70%;
+        size:20em;
+        font-weight: bold;
+        margin-top:30px;
+    }
+    
+    .personal:after {
+        background: #fff;
+        content: 'Personal information';
+        padding: 0 4px;
+        position: relative;
+        top: -13px;
+        right:410px;
+    }
+
+    .address{
+        color: rgb(0, 55, 255);
+        overflow: visible;
+        text-align: center;
+        height: 1px;
+        width: 70%;
+        size:20em;
+        margin-top:30px;
+    }
+    .address:after {
+        background: #fff;
+        content: 'Address';
+        padding: 0 4px;
+        position: relative;
+        top: -13px;
+        right:410px;
+        font-weight: bold;
+    }
+    .label-bold{
+        font-weight: bold;
+        display: flex;
+        float:left;
+    }
+
+    .inline{
+        display: inline-block;
+    }
+</style>
+
+</head>
+<body>
+    <hr class="personal">
+        <form>
+                <div class="inline">
+                    <label class="label-bold">*First name: </label>
+                    <input type="text" id="inputFirstName"> 
+                </div>
+                <div class="inline">
+                    <label >Middle Name: </label>
+                    <input type="text"  id="inputMiddleName" >
+                </div>
+                <div class="inline">
+                    <label class="label-bold">*Last Name:</label>
+                    <input type="text" id="inputLastName">
+                </div>
+            <hr class="address">
+            
+            <div class="inline">
+                <label style="margin-left: 15px;" >Address: </label>
+                  <input style="margin-left: 50px;" type="text" id="inputAddress">
+                </div>
+               
+                <div class="inline">
+                <label > City or Town: </label>
+                  <input type="text" id="inputCiteOrTown">
+              </div>
+
+              <div class="inline">
+                
+                    <label >State:</label>
+                    <select style="margin-left: 55px; height: 30px;" id="state">
+                        <option selected disabled>Choose a State</option>
+                        <option>Киев</option>
+                        <option>Харьков</option>
+                        <option>Одесса</option>
+                        <option>Донецк</option>
+                        <option>Запорожье</option>
+                        <option>Львов</option>
+                        <option>Тернополь</option>
+                        <option>...</option>
+                    </select>
+                </div>
+         
+                <div class="inline">
+                    <label  class="label-bold">*Zip code: </label>
+                    <input type="text" id="zip">
+                </div>
+            </div>
+        </div>
+        </form>
+
+</body>
+</html>

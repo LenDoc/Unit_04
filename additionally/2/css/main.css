@@ -1,0 +1,244 @@
+body{
+	font-size: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	color: #2f2a3b;
+	padding: 0;
+	margin: 0;
+	font-weight: 400;
+	overflow-x: hidden;
+}
+div,p,input,button,form,span,a,ul,li{
+	box-sizing: border-box;I
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+}
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.p {
+	line-height: 1.66em;
+}
+.header{
+	/* display: inline-block; */
+	background: rgb(212,255,246);
+	background: linear-gradient(151deg, rgba(212,255,246,1) 0%, rgba(117,127,255,1) 49%, rgba(255,254,170,1) 100%);
+	/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dbdfe', endColorstr='#3790d9', GradientType=1 ); */
+	padding-top: 65px;
+	color:  #fff;
+	padding-bottom: 100px;
+}
+.wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+}
+.offer{
+	width: 490px;
+}
+.title{
+	font-size: 35px;
+	width: 555px;
+}
+.title span{
+	font-size: 40px;
+}
+h3{
+	color:#3dd6f5;
+	text-shadow: rgb(205, 206, 255) 1px 0 5px;
+
+}
+.intro{
+	margin: 40px 0;
+	width: 390px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.66em;
+}
+.btn{
+	background: #ffd429;
+	color: #2e2a1b;
+	font-family: 'Montserrat', sans-serif;
+	display:  block;
+	width: 220px;	
+	padding: 20px 0;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+.btn:hover{
+	background: #f5d03d;
+}
+
+.section-title{
+	font-size: 30px;
+	text-align: center;
+}
+.future{
+	padding-top: 108px;
+	padding-bottom: 115px;
+}
+.bonuses{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 65px;
+}
+.bonus{
+	width: 350px;
+	/* background: url('../img/study.png') no-repeat center top; */
+	text-align: center;
+	font-size: 16px;
+  background: linear-gradient(135deg, #dfdc11 40%, #37467c 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  padding: 0.3em 0.6em ;
+  border: 3px solid transparent;
+  border-image: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
+  border-image-slice: 1;
+  
+}
+.bonus-title{
+	font-size: 19px;
+	padding-top: 85px;
+}
+.bonus-text{
+	margin-top: 18px;
+	/* line-height: 1.66em; */
+font-size: 15px;;
+}
+.bonus-travel{
+	/* background: url('../img/skills.png') no-repeat center top; */
+}
+.bonus-value{
+	width: 350px;
+	/* background: url('../img/interests.png') no-repeat center top; */
+}
+.mail{
+	background: #ecf3f8;
+	padding: 100px 0;
+}
+.form{
+	margin-top: 40px;
+}
+.input{
+	display: block;
+	margin:auto;
+	font-size: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	width: 340px;
+	height: 50px;
+	border:  1px solid #bbbbbb;
+	border-radius: 5px;
+	padding-left: 20px;
+	margin-bottom: 15px;
+	color: #85828c;
+}
+.btn-form{	
+	display: block;
+	margin: auto;
+	border:  none;
+	cursor: pointer;
+	width: 340px;
+	height: 55px;
+}
+.footer{
+	background: #164d7a;
+	padding: 62px 0;
+	width: 100%;
+}
+.credits{
+	color: #ffffff;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+.colorclass { 
+	color: #104360;
+	font-weight: bold;
+}
+.animated{
+	opacity: 0;
+}
+
+/* Responsive */
+/* 992px - 1200px */
+@media screen and (max-width: 1200px){
+	.container{
+		width: 960px;
+	}
+	.wrapper{
+		flex-direction: column;
+	}
+	.offer{
+		width: 90%;
+	}
+	.intro{
+		width: auto;
+		font-size: 20px;
+	}
+	.travel{
+		display: block;
+		width: 549px;
+	}
+	.bonuses{
+		flex-direction: column;
+	}
+	.bonus{
+		width: auto;
+		margin-bottom: 25px;
+	}
+	.title{
+		width: auto;
+	}
+	.logo{
+		margin-bottom: 40px;
+	}
+}
+/* 768px - 992px */
+@media screen and (max-width: 992px)
+{
+	.container{
+		width: 720px;
+	}
+	.btn{
+		display: block;
+		align-items:center;
+		margin: auto;
+	}
+}
+/*576px-768px*/
+@media screen and (max-width: 768px)
+{
+
+	.container{
+		width: 540px;
+	}
+	.travel{
+		width: 100%;
+	}
+	.input{
+		width: 80%;
+		font-size: 15px;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	}
+	.btn{
+		width: 80%;
+	}
+}
+/*320px-576px*/
+@media screen and (max-width: 576px)
+{
+	.container{
+		width: 90%;
+	}
+	.input{
+		font-size: 12px;
+	}
+
+}

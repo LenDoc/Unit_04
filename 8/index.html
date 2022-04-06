@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<style>
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:20px;
+        margin:20px;
+    }
+    label{
+        display: flex;
+        float:left;
+    }
+    .personal{
+    color: rgb(0, 55, 255);
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    width: 70%;
+    size:20em;
+    height: 12px;
+    font-weight: bold;
+    }
+    
+    .personal:after {
+    background: #fff;
+    content: 'Personal information';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+    right:410px;
+    }
+    .address{
+    color: rgb(0, 55, 255);
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    width: 100%;
+    size:20em;
+    height: 12px;
+    }
+    .address:after {
+    background: #fff;
+    content: 'Address';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+    right:410px;
+    font-weight: bold;
+    }
+
+</style>
+
+</head>
+<body>
+    <hr class="personal">
+        <form>
+            </div> 
+            <div class="container">
+            <div class="form-group row">
+                <div class="col-3">
+                <label for="inputFirstName" class="font-weight-bold col-form-label">*First name: </label>
+                </div>
+                <div class="col-6">
+                  <input type="text" class="form-control" id="inputFirstName" placeholder="">
+                </div>
+               
+              </div>
+              <div class="form-group row">
+                <div class="col-3">
+                <label for="inputMiddleName" class="font-weight-light col-form-label">Middle Name: </label>
+               </div>
+                <div class="col-6">
+                  <input type="text" class="form-control" id="inputMiddleName" placeholder="">
+                </div>
+              </div>
+            
+            <div class="form-group row">
+                <div class="col-3">
+                <label for="inputLastName" class="font-weight-bold col-form-label">*Last Name:</label>
+               </div>
+                <div class="col-6">
+                  <input type="text" class="form-control" id="inputLastName" placeholder="">
+                </div>
+              </div>
+          
+
+            <hr class="address">
+            <div class="form-group row">
+                <div class="col-3">
+                <label for="inputAddress" class="font-weight-light col-form-label">Address: </label>
+                </div>
+                <div class="col-6">
+                  <input type="text" class="form-control" id="inputAddress" placeholder="">
+                </div>
+               
+              </div>
+              <div class="form-group row">
+                <div class="col-3">
+                <label for="inputCiteOrTown" class="font-weight-light col-form-label"> City or Town: </label>
+               </div>
+                <div class="col-6">
+                  <input type="text" class="form-control" id="inputCiteOrTown" placeholder="">
+                </div>
+              </div>
+            <div class="form-group row">
+                <div class="col-3">
+                    <label for="state" class="font-weight-light">State:</label>
+                </div>
+                <div class="col-6">
+                    <select id="state" class="form-control">
+                        <option selected disabled>Choose a State</option>
+                        <option>Киев</option>
+                        <option>Харьков</option>
+                        <option>Одесса</option>
+                        <option>Донецк</option>
+                        <option>Запорожье</option>
+                        <option>Львов</option>
+                        <option>Тернополь</option>
+                        <option>...</option>
+                    </select>
+                </div>
+            </div>
+                <div class="form-group row">
+                    <div class="col-3">
+
+                   
+                    <label for="zip" class="font-weight-bold">*Zip code:</label>
+                 </div>
+                 <div class="col-6">
+                    <input type="text" class="form-control" id="zip">
+                </div>
+                </div>
+            </div>
+        </div>
+        </form>
+</body>
+</html>
